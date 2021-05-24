@@ -30,4 +30,8 @@ public class CityService {
         return repository.findById(id);
     }
 
+    public Optional getCityByName(String name) {
+        log.info("getCityByName");
+        return repository.findByName(name);
+    }
 }
