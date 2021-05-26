@@ -30,9 +30,9 @@ public class CountryResource {
     // No endereço da aplicação, parâmetros podem ser passados para modificar o comportamento da paginação
     // ex.: localhost:8080/countries?page=0&size=10&sort=name,asc
     @GetMapping //mapeia método para o verbo GET
-    public Page<Country> getCountries(Pageable page) {
+    public ResponseEntity<Page<Country>> getCountries(Pageable page) {
         log.info("getCountries");
-        return service.getAllCountries(page);
+        return ResponseEntity.ok().body(service.getAllCountries(page));
     }
 
     @GetMapping("/{id}") // {} indica que valor é um parâmetro

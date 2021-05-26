@@ -39,9 +39,6 @@ public class City {
     @Column(name = "lat_lon", updatable = false, insertable = false)
     private Point geolocation;
 
-    public City() {
-    }
-
     public Long getId() {
         return id;
     }

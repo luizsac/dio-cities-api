@@ -15,6 +15,15 @@ import java.util.List;
 })
 public class State {
 
+    public State(Long id, String name, String uf, Integer ibge, Country country, List<Integer> ddd) {
+        this.id = id;
+        this.name = name;
+        this.uf = uf;
+        this.ibge = ibge;
+        this.country = country;
+        this.ddd = ddd;
+    }
+
     @Id
     private Long id;
 
@@ -33,9 +42,6 @@ public class State {
     @Basic(fetch = FetchType.LAZY)
     @Column(name = "ddd", columnDefinition = "jsonb")
     private List<Integer> ddd;
-
-    public State() {
-    }
 
     public Long getId() {
         return id;
