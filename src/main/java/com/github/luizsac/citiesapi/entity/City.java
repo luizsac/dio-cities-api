@@ -23,6 +23,10 @@ public class City {
         this.geolocation = geolocation;
     }
 
+    public City() {
+
+    }
+
     @Id
     private Long id;
 

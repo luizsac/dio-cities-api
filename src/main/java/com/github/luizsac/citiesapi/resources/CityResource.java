@@ -46,7 +46,6 @@ public class CityResource {
     public ResponseEntity getCity(@PathVariable String name) {
         log.info("getCity by its name");
         name = name.replaceAll("-", " ");
-        log.info("Name after fixing spaces: {}", name);
         Optional cityOptional = service.getCityByName(name);
         if (cityOptional.isPresent()) {
             return ResponseEntity.ok().body(cityOptional.get());

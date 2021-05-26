@@ -17,6 +17,10 @@ public class Country {
         this.bacen = bacen;
     }
 
+    public Country() {
+
+    }
+
     @Id // define atributo como chave primária da tabela
     private Long id;
 

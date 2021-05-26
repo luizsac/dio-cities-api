@@ -24,6 +24,10 @@ public class State {
         this.ddd = ddd;
     }
 
+    public State() {
+
+    }
+
     @Id
     private Long id;
 
