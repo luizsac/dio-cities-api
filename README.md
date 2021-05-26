@@ -15,6 +15,8 @@ https://cities-api-luizsac.herokuapp.com/states
 ### Cities
 #### All cities
 https://cities-api-luizsac.herokuapp.com/cities
+#### Pagination
+https://cities-api-luizsac.herokuapp.com/cities?page=1&size=20
 #### City by id
 https://cities-api-luizsac.herokuapp.com/cities/1692
 #### City by name
