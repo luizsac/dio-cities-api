@@ -9,6 +9,7 @@ https://cities-api-luizsac.herokuapp.com/countries
 https://cities-api-luizsac.herokuapp.com/countries?page=1&size=20
 
 ### States
+#### All states
 https://cities-api-luizsac.herokuapp.com/states
 
 ### Cities
